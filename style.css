@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    background-color: bisque;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-title{
+    font-size: 50px;
+    font-weight: 900px;
+    color: darkblue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.title {
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#Hero{
+    background-image: url(background1.jpg);
+    background-size:auto;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    height: 600px;
+}
+
+#Hero::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 601px;
+    width: 1264px;
+    background-color: cyan; 
+    opacity: .2;
+    z-index: -1;
+}
+#Hero button{
+    display: block;
+    width: fit-content;
+    font-size: 50px;
+    color: black;
+    margin: 20px;
+    font-family: MV Boli;
+    font-size: 60px;
+    background-color:darkkhaki; 
+}
+#Hero .sam button{
+    display: block;
+    width: fit-content;
+    font-size: 30px;
+    margin: 20px;
+    font-family: cursive;
+    font-size: 60px;
+    background-color: lightblue;
+    font-family: Lucida Handwriting;
+}
+
+#Hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#Hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 0px;
+    background-color: blue;
+}
+#Hero .cta{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 30px;
+    color:white;
+    background-color: transparent;
+    border: 2px solid darkgreen;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    margin-left: 300px; 
+    color: white;
+}
+#Hero .cta:hover{
+    color: cyan;
+    background-color: maroon; 
+}
+
+.icon{
+    height: 100px;
+    width: 200px;
+    
+}
+#services{}
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.Family{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 50px; 
+    border-radius: 50px;;
+    background-size: cover;
+    margin: 20px; 
+    position: relative; 
+    height: 150px;
+    background-image: url(family.PNG);
+    color: white;
+    text-transform: capitalize;
+}
+.Family h3{
+    color: black;
+    text-transform: none;
+}
+.Family p{
+    color: black;
+    font-family: cursive;
+    font-weight: 5000px;
+    text-align: justify;
+    text-transform: none;
+}
+
+.Hobbies{
+    flex-basis: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 50px; 
+    border-radius: 50px;;
+    background-size: cover;
+    margin: 20px; 
+    position: relative; 
+    height: 150px;
+    background-image: url(Hobbies.PNG);
+    color: white;
+    text-transform: capitalize;
+}
+.Hobbies p{
+    color: black;
+    text-transform: none;
+}
+.Talent{
+    flex-basis: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 50px; 
+    border-radius: 50px;;
+    background-size: cover;
+    margin: 20px; 
+    position: relative; 
+    height: 200px;
+    background-image: url(Talent.PNG);
+    color: white;
+    text-transform: capitalize;
+}
+.Talent p{
+    color: black;
+    text-transform: none;
+}
+.Strength{
+    flex-basis: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 50px; 
+    border-radius: 50px;;
+    background-size: cover;
+    margin: 20px; 
+    position: relative; 
+    height: 150px;
+    background-image: url(Strength.PNG);
+    color: white;
+    text-transform: capitalize;
+}
+.Strength p{
+    color: black;
+    text-transform: none;
+}
+.Job{
+    flex-basis: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 50px; 
+    border-radius: 50px;;
+    background-size: cover;
+    margin: 20px; 
+    position: relative; 
+    height: 200px;
+    background-image: url(job.png);
+    color: white;
+    text-transform: capitalize;
+}
+.Job p{
+    color: black;
+    text-transform: none;
+}
+.services-top img{
+    width: 800px;
+    height: 500px;
+}
+.services-top span{
+    color: red;
+}
+.mama1 p{
+    padding: 7px;
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mama img{
+    border-radius: 20px;
+    max-width: 200px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+    float: left;
+}
+.papa img{
+    border-radius: 20px;
+    max-width: 200px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+    float: left;
+    
+}
+.papa1 p{
+    padding: 7px;
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.middle{
+  width: 93px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.middle span{
+    color: red; 
+    font-style: italic; 
+    text-decoration: underline;
+    font-size: 15px;
+}
+.middle p{
+    color: maroon;
+    font-size: 15px;
+}
+.ate img{
+    border-radius: 20px;
+    max-width: 200px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+    float: left;
+}
+
+.hobby1 img{
+    border-radius: 20px;
+    max-width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+    float: left;
+    
+}
+.hobby p{
+    padding: 7px;
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hobbies{
+  width: 93px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.hobbies span{
+    color: red; 
+    font-style: italic; 
+    text-decoration: underline;
+    font-size: 30px;
+}
+.hobbies p{
+    color: maroon;
+    font-size: 20px;
+    
+
+}
+.hobby2 img{
+    border-radius: 20px;
+    max-width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+    float: left;
+    
+}
+.hobbyp p{
+    padding: 7px;
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hobbies1 span{
+    color: red; 
+    font-style: italic; 
+    text-decoration: underline;
+    font-size: 30px;
+}
+.hobbies1 p{
+    color: maroon;
+    font-size: 20px;
+}
+.hobby3 img{
+    border-radius: 20px;
+    max-width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+    float: left;
+    
+}
+.hobby4 img{
+    border-radius: 20px;
+    max-width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+    float: left;
+}
+.tzu p{
+    padding: 7px;
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.shi span{
+    color: darkgreen; 
+    font-style: italic; 
+    font-size: 30px;
+    font-family: Ink Free;
+}
+.pr p{
+    padding: 7px;
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ting span{
+    color: red; 
+    font-style: italic; 
+    text-decoration: underline;
+    font-size: 30px;
+}
+.ting p{
+    color: maroon;
+    font-size: 20px;
+}
+.ting p{
+    text-align: justify;
+    letter-spacing: 2px;
+}
+.skills{
+    text-align: center;
+    padding: 50px;
+    font-family: rockwell;
+    font-size: 50px;
+    margin: 30px;
+    background-color: cadetblue;
+    height: 1000px;
+}
+
+.skills1 p{
+    margin: 50px;
+    font-size: 30px;
+}
+.skills1 h1{
+    color:beige;
+}
+
+.skills1 h1 span{
+    color:crimson;
+    font-size: 70px;
+    font-family: Impact;
+    font-weight: lighter;
+}
+.ST{
+    text-align: center;
+    padding: 50px;
+    font-family: rockwell;
+    font-size: 50px;
+    margin: 30px;
+    background-color: cadetblue;
+    height: 2000px;
+}
+
+.ST1 p{
+    margin: 50px;
+    font-size: 30px;
+}
+.ST1 h1{
+    color:beige;
+    text-align:center;
+    word-spacing: 30px;
+}
+
+.ST1 h1 span{
+    color:crimson;
+    font-size: 70px;
+    font-family: Impact;
+    font-weight: lighter;
+}
+
+.Sat p{
+    margin: 50px;
+    font-size: 30px;
+}
+.Sat1 h1{
+    color:beige;
+    text-align: center;
+}
+
+.Sat1 h1 span{
+    color:lightcyan;
+    font-size: 70px;
+    font-family: Impact;
+    font-weight: lighter;
+}
+.cauz{
+    color:darkblue;
+    text-align: left;
+    font-size: 30px;
+    font-family: Courier New;
+    margin: 50px;
+    text-decoration: overline underline;
+}
+.cauz1{
+    font-size: 30px;
+    text-align: left;
+    color: maroon;
+    margin: 50px;
+}
+	
+#sideNav{
+		font-size: 15px;
+		width: 230px;
+		height: 1000px;
+		position: fixed;
+		right: -250px;
+		top: 0;
+		background: beige;
+		z-index: 2;
+		padding-top: 30px;
+		transition: 0.5s;
+		font-family: Bahnschrift;
+	
+}
+nav ul li{
+		list-style: none;
+		margin: 50px 35px;
+	
+}
+nav ul li a{
+		text-decoration: none;
+		color:maroon;
+}
+#menuBtn{
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		position: fixed;
+		right: 10px;
+		top: 20px;
+		border-radius: 5px;
+		z-index: 3;
+		cursor: pointer;
+
+}
+.menuBtn menu{
+		height: auto;
+		width: auto;
+}
+#menuBtn img{
+		margin-top: 15px;
+		width: 50px;
+		height: 50px;
+}
+
+.cousin span{
+    color: red; 
+    font-style: italic; 
+    text-decoration: none;
+    font-size: 30px;
+}
+.cousin p{
+    color: maroon;
+    font-size: 20px;
+}
+.cauz p{
+    padding: 3px;
+    float: left;
+}
+
+.strength1 p{
+    margin: 50px;
+    font-size: 30px;
+}
+.strength1 h1{
+    color:beige;
+}
+
+.strength1 h1 span{
+    color:crimson;
+    font-size: 70px;
+    font-family: Impact;
+    font-weight: lighter;
+}
+.career img{
+    float: left;
+    width: 500px;
+    margin: 40px;
+}
+.career1 img{
+    float: right;
+    width: 500px;
+    margin: 50px;
+    height: 250px;
+}
+.career2 p{
+    font-size: 30px;
+    margin: 50px;
+    text-align: justify;
+}
+.career2 span{
+    color:red;
+    text-transform: uppercase;
+    margin: 30px;
+    font-size: 30px;
+}
+.contact1 img{
+    margin-left: 150px;
+}
+.Info{
+    background-color:darkkhaki;
+    width: 500px;
+    height: 250px;
+}
+.Info h1{
+    font-size: 30px;
+    font-family: papyrus;
+    text-align: left;
+    margin: 30px;
+}
+.Info img{
+    margin-left: 150px;
+}
+.Info span{
+    color: darkcyan;
+
+}
+.peysbuk img{
+    height: 100px;
+    margin-left: 50px;
+}
+
